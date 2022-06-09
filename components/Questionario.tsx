@@ -11,7 +11,7 @@ interface QuestionarioProps{
     irPraProximoPasso: () => void
 }
 
-export const Questionario = (props: QuestionarioProps) => {
+const Questionario = (props: QuestionarioProps) => {
 
     function respostaFornecida(indice: number){
         if(props.questao.naoRespondida){
@@ -36,3 +36,5 @@ export const Questionario = (props: QuestionarioProps) => {
     </div>
   )
 }
+
+export default Questionario
